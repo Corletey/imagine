@@ -74,7 +74,7 @@ for (let i = 0; i <= 10; i++){
   console.log('Notify friends!', i);
 }
 
-
+//Math in JS
 
 // If/Else
 if (today.getHours() >= 16) {
