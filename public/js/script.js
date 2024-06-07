@@ -147,3 +147,25 @@ Math.ceil (Math.random() * 1000000);
 // Handling user input
 13049 + Number('344');
 Number('delete');
+
+
+// String concatenation
+const firstname = 'Ab';
+const lastname = 'Ena';
+firstname.trim() + ' ' + lastname.trim(); //.trim removes redundant spaces
+
+// Template Literal
+`${firstname.trim()} ${lastname.trim()}`;
+
+// String Methods
+firstname.length;
+lastname.length;
+`${firstname.trim()} ${lastname.trim()}`.length; //each space counts
+(firstname.trim() + ' ' + lastname.trim()).length;
+firstname.toUpperCase();
+lastname.charAt(2); // counts indexes
+`${firstname.trim()} ${lastname.trim()}`.charAt(5);
+`${firstname.trim().charAt()}${lastname.trim().charAt()}`;
+
+// String conversion
+String(2014);
