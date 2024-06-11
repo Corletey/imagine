@@ -1,3 +1,4 @@
+// June 6
 const myButton = document.getElementById('btn');
 myButton.onclick = function () {
     const name = prompt("Enter your full name: ");
@@ -61,6 +62,7 @@ today.toString();
 today.toLocaleDateString();
 today.getHours();
 
+// June 7
 // If/Else
 if (today.getHours() >= 16) {
   console.log('Class has ended!');
@@ -148,7 +150,7 @@ Math.ceil (Math.random() * 1000000);
 13049 + Number('344');
 Number('delete');
 
-
+// June 10
 // String concatenation
 const firstname = 'Ab';
 const lastname = 'Ena';
@@ -169,3 +171,58 @@ lastname.charAt(2); // counts indexes
 
 // String conversion
 String(2014);
+
+// June 11
+//Write a function that will take firstname, lastname and return fullname 
+const user = {
+  firstname: 'Joe',
+  lastname : 'Ganner'
+}
+function fullname(user) {
+	return `${user.firstname} ${user.lastname}`;
+}
+fullname(user);
+
+// function getFullName(firstName, lastName) {
+//   return firstName + ' ' + lastName;
+// console.log(fullname(user1));
+
+const profile = {
+  firstname: 'Joe',
+  lastname : 'Ganner'
+}
+function fullname(profile) {
+  return {
+    ...profile,
+    fullname: `${profile.firstname} ${profile.lastname}`
+  }
+}
+fullname(profile);
+
+// Array map
+const users = [
+  {firstname: 'Linda', lastname: 'Mark'},
+  {firstname: 'Buch', lastname: 'Peter'},
+  {firstname: 'Kayda', lastname: 'Ares'},
+  {firstname: 'Elon', lastname: 'Lent'},
+]
+users.map (fullname);
+
+// Map and return the squares of numbers
+function square(number) {
+  return number ** 2;
+}
+const numbers = [0,1,2,3,4,5,6]
+numbers.map(square);
+
+// Filter and return even numbers
+function even(number) {
+  return number % 2 === 0;
+}
+numbers.filter(even);
+
+// Filter and return odd numbers
+function odd(number) {
+  return number % 2 === 1;
+}
+numbers.filter(odd);
