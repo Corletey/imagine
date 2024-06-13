@@ -251,3 +251,21 @@ function birthday(user) {
   else {
     return `It's not your day, ${user.name}.`;
   }
+
+  //Jun 13
+  // bottle class
+class Bottle{
+  constructor(color,shape,volume){
+    this.color = color;
+    this.shape = shape;
+    this.volume = volume;
+  }
+  getInfo(){
+    return `This is a ${this.color} ${this.shape} bottle with a volume of ${this.volume}ml`
+  }
+}
+
+const bottle1 = new Bottle('black','circle', 400);
+bottle1.getInfo();
+const bottle2 = new Bottle('black','round', 800);
+bottle2.getInfo();
