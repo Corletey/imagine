@@ -226,3 +226,28 @@ function odd(number) {
   return number % 2 === 1;
 }
 numbers.filter(odd);
+
+// Write a function that  takes a user name and dateOfBirth and return true if their birthday is taday else false
+const user = {
+  name: 'Genesis Maybach',
+  dateOfBirth:'11/04/1887',
+};
+
+function birthday(user) {
+  const today = new Date();
+  const birthDate = new Date(user.dateOfBirth);
+   if( today.getMonth() === birthDate.getMonth() && today.getDate() === birthDate.getDate()){
+     return true;
+   } else{
+     return false
+   }
+}
+  
+  birthday(user);
+
+  function isBirthdayToday(user) {
+    return `Happy Birthday, ${user.name}!`;
+  }
+  else {
+    return `It's not your day, ${user.name}.`;
+  }
